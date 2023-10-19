@@ -19,7 +19,7 @@ return new class extends Migration
             ->references("id")
             ->on("tasks");
             $table->string("titulo");
-            $table->boolean("estado")->default(false)->comment("0=Pendiente, 1=Completdo");
+            $table->boolean("estado")->default(false)->comment("0=Pendiente, 1=Completado");
             $table->timestamps();
         });
     }
